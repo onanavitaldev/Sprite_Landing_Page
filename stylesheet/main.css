@@ -1,0 +1,138 @@
+/* 
+
+  Author: ONANA Vital
+  Sponsor: WebByte Agency
+  Creation: 17/09/2024
+
+*/
+
+/* Variables */
+:root {
+  --main-color: #009C00;
+  --dark-green: #4D8A00;
+  --black: #000e02;
+  --white: #fff;
+  --radius: 1px;
+  --font: Figtree;
+}
+
+* {
+  font-family: var(--font);
+}
+*::selection {
+  background-color: var(--main-color);
+  color: var(--black);
+}
+
+body {
+  background-color: var(--black);
+}
+body::-webkit-scrollbar {
+  background-color: var(--color);
+  border-radius: 50px;
+  width: 2px;
+  padding: 3em;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-corner {
+  background-color: #000e02;
+  border-radius: 100vw;
+  width: 1px;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-button {
+  display: none;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--green) !important;
+  border-radius: 5px;
+  width: 0.5px;
+  padding: 5em;
+  border: .25em solid transparent;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000e02 !important;
+  border-radius: 2px;
+  width: 0.1px;
+  padding: 5em;
+  border: none;
+  z-index: 1;
+}
+
+/* Load */
+.load {
+  background-color: var(--black);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0s ease-in 0.9s;
+}
+
+.load .loader img {
+  animation: zoomIn 1s;
+}
+
+/* Nav */
+nav {
+  background-color: transparent;
+}
+
+nav ul li {
+  font-size: 18px;
+}
+nav ul li a {
+  transition: all 0.3s ease-in 0s;
+}
+nav ul li a:hover {
+  color: var(--main-color);
+  font-size: 19px;
+}
+
+/* Buttons */
+.btn {
+  background-color: var(--main-color);
+  border-radius: var(--radius);
+  color: var(--white);
+}
+
+/* Banner */
+#banner {
+  background-image: linear-gradient(to top, rgba(1, 5, 1, 0.957) 60%, rgba(0, 13, 2, 0.881)),
+  url('../assets/img/sprite\ \(3\).webp');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+#banner h1 {
+  animation: fadeInUp 3s;
+}
+
+#marketing {
+  background-image: linear-gradient(var(--black),
+  var(--black));
+}
+
+#testimonials #card {
+  background-color: #080808;
+  transition: all 0.3s ease-in 0s;
+}
+#testimonials #card:hover {
+  background-color: #050505;
+}
+
+footer ul li {
+  line-height: 2;
+}
